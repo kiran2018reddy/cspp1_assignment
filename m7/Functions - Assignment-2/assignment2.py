@@ -28,3 +28,4 @@ def main():
     print("Lowest Payment:", paying_debt(data[0], data[1]))
 if __name__ == "__main__":
     main()
+    
