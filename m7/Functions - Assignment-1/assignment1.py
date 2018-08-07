@@ -26,20 +26,20 @@
 
 
 def payingDebtOffInAYear(balance, annualInterestRate, monthlyPaymentRate):
-	temp = balance
-	months = 12
-	while months >= 1:
-		Monthlyinterestrate = annualInterestRate / 12.0
-		Minimummonthlypayment = monthlyPaymentRate * temp
-		Monthlyunpaidbalance = temp - Minimummonthlypayment
-		Updatedbalanceeachmonth = Monthlyunpaidbalance + (Monthlyinterestrate*Monthlyunpaidbalance)
-		temp = updatedbalanceeachmonth
-		months = months - 1
-	return(round(temp, 2))
+    temp = balance
+    months = 12
+    while months >= 1:
+        Monthlyinterestrate = annualInterestRate / 12.0
+        Minimummonthlypayment = monthlyPaymentRate * temp
+        Monthlyunpaidbalance = temp - Minimummonthlypayment
+        Updatedbalanceeachmonth = Monthlyunpaidbalance + (Monthlyinterestrate*Monthlyunpaidbalance)
+        temp = updatedbalanceeachmonth
+        months = months - 1
+    return(round(temp, 2))
 def main():
-	data = input()
-	data = data.split(' ')
-	data = list(map(float, data))
-	print("Remaining balance:", payingDebtOffInAYear(data[0],data[1],data[2]))
+    data = input()
+    data = data.split(' ')
+    data = list(map(float, data))
+    print("Remaining balance:", payingDebtOffInAYear(data[0],data[1],data[2]))
 if __name__== "__main__":
-	main()
+    main()
