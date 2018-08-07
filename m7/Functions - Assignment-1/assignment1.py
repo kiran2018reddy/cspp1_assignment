@@ -29,11 +29,11 @@ def payingdebtoffinayear(balance, annualInterestRate, monthlyPaymentRate):
     temp = balance
     months = 12
     while months >= 1:
-        Monthlyinterestrate = annualInterestRate / 12.0
-        Minimummonthlypayment = monthlyPaymentRate * temp
-        Monthlyunpaidbalance = temp - Minimummonthlypayment
-        var = Monthlyinterestrate*Monthlyunpaidbalance
-        updatedbalanceeachmonth = Monthlyunpaidbalance + (var)
+        monthlyinterestrate = annualInterestRate / 12.0
+        minimummonthlypayment = monthlypaymentrate * temp
+        monthlyunpaidbalance = temp - minimummonthlypayment
+        var = monthlyinterestrate*monthlyunpaidbalance
+        updatedbalanceeachmonth = monthlyunpaidbalance + (var)
         temp = updatedbalanceeachmonth
         months = months - 1
     return(round(temp, 2))
