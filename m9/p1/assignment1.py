@@ -2,7 +2,7 @@
 def is_word_guessed(secret_word, letters_guessed):
     """secret"""
     cou = 0
-    l_1= len(secret_word)
+    l_1 = len(secret_word)
     l_2 = len (letters_guessed)
     for i in range(l_1):
         for k in range(l_2):
