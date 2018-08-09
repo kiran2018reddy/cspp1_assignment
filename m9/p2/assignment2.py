@@ -7,7 +7,7 @@ def get_guessed_word(secret_word, letters_guessed):
     for i in range(l_1):
         cou = 0
         for k in range(l_2):
-            if secret_word[i] == letters_gussed[k]:
+            if secret_word[i] == letters_guessed[k]:
                 cou = cou + 1
                 if cou == 1:
                     a_str = a_str + secret_word[i]
