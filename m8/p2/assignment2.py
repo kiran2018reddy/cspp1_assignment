@@ -6,10 +6,12 @@
 
 def sumofdigits(n):
     '''sum'''
-    while n > 0:
-        r = n % 10
-        return r+sumofdigits(n//10)
-    return 0
+    if n <= 0:
+    	return 0
+    r = n % 10
+    return r+sumofdigits(n//10)
+    
+  
 def main():
     '''sum'''
     a = input()
