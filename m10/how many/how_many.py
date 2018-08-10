@@ -3,9 +3,12 @@
 
 
 def how_many(aDict):
+    print(aDict)
     l = 0
     for i in aDict:
-        for j in i:
+        print(i)
+        for j in aDict[i]:
+            print(j)
             l = l + 1
     return l
 def main():
