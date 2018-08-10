@@ -4,7 +4,7 @@
 
 def apply_to_each(L, f):
     L1 = ()
-    for i in range(len(L)):
+    for i in L:
         L[i]= f(L[i])
         L1 = L1 + (L[i],)
     return L1
