@@ -1,20 +1,28 @@
 """secrate word"""
 def get_guessed_word(secret_word, letters_guessed):
     """guess"""
-    l_1 = len(secret_word)
-    l_2 = len(letters_guessed)
-    a_str = ""
-    for i in range(l_1):
-        cou = 0
-        for k in range(l_2):
-            if secret_word[i] == letters_guessed[k]:
-                cou = cou + 1
-                if cou == 1:
-                    a_str = a_str + secret_word[i]
-                break
-        if cou == 0:
-            a_str = a_str + '_'
-    return a_str
+    # l_1 = len(secret_word)
+    # l_2 = len(letters_guessed)
+    # a_str = ""
+    # for i in range(l_1):
+    #     cou = 0
+    #     for k in range(l_2):
+    #         if secret_word[i] == letters_guessed[k]:
+    #             cou = cou + 1
+    #             if cou == 1:
+    #                 a_str = a_str + secret_word[i]
+    #             break
+    #     if cou == 0:
+    #         a_str = a_str + '_'
+    # return a_str
+    res_str=""
+    for i in secret_word:
+        if i not in letters_guessed:
+            res_str = res_str+"_"
+        else:
+            res_str=res_str+i
+    return res_str
+
 def main():
     '''
     Main function for current assignment
