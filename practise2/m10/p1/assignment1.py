@@ -16,7 +16,7 @@ def get_available_letters(letters_guessed):
         if i in dic1.values():
             del dic1[i]
     for j in dic1.values():
-        k = k + dic1[i]
+        k = k + dic1[j]
     return k
 
 
