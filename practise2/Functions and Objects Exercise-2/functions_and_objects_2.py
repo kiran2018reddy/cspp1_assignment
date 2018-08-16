@@ -1,10 +1,11 @@
-#Exercise : Function and Objects Exercise-3
-#Implement a function that converts the given testList = [1, -4, 8, -9] into [1, 16, 64, 81]
-def square(x):
-    s = x**2
-    return s
+#Exercise : Function and Objects Exercise-2
+#Implement a function that converts the given testList = [1, -4, 8, -9] into [2, -3, 9, -8]
+def inc(x):
+    x=x+1
+    return x
+
 def apply_to_each(L, f):
-    L1 = ()
+    L1=()
     for i in range(len(L)):
         L[i] = f(L[i])
         L1 = L1 + (L[i], )
@@ -15,7 +16,8 @@ def main():
     list1 = []
     for j in data:
         list1.append(int(j))
-    x= apply_to_each(list1, square)
+    x = apply_to_each(list1, inc)
     print(x)
-if __name__== "__main__":
+
+if __name__ == "__main__":
     main()

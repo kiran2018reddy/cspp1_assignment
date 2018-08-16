@@ -3,11 +3,12 @@
 
 
 def apply_to_each(L, f):
-    L1 = ()
-    for i in range(len(L)):
-        L[i]= f(L[i])
-        L1 = L1 + (L[i],)
+    L1=()
+    for i in range(len(L)):#taking total range
+        L[i]=f(L[i])#converting -ve to +ve
+        L1 =L1 + (L[i],)#adding numbers to mty
     return L1
+
 def main():
     data = input()
     data = data.split()

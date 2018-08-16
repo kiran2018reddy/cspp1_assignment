@@ -9,8 +9,8 @@ def is_word_guessed(secret_word, letters_guessed):
             if secret_word[i] == letters_guessed[k]:
                 cou = cou + 1
     return bool(cou == len(secret_word))
-    # for i in secret_word:
-    # 	if i not in letters_guessed:
+    # for i in letters_guessed:
+    # 	if i not in secret_word:
     # 		return False
     # return True
 def main():
