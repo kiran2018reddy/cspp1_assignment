@@ -37,7 +37,7 @@ def word_list(text):
     var_1 = text.lower()
     var_2 = var_1.split(" ")
     var_3 = var_2.join([i for i in s if i.isalpha()])
-    print("va33",var_3)
+    print("va33", var_3)
     return var_3
 
     '''
