@@ -38,7 +38,7 @@ def search(search_index, query):
     		collect = search_index[i]
     		for j in collect:
     			doc_id.append(j[0])
-    print("hiii",set(doc_id))
+    # print(hiii",set(doc_id))
     return(set(doc_id))
 
 '''
