@@ -30,7 +30,7 @@
 '''
 
 def search(search_index, query):
-    query = query.lowercase()
+    query = query.lower()
     quary_list = query.split(" ") 
     doc_id = []
     for i in quary_list:
