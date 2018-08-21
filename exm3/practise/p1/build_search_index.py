@@ -48,6 +48,7 @@ def word_list(text):
     
 
 def build_search_index(docs):
+    word_list(docs[0])
     '''
         Process the docs step by step as given below
     '''
