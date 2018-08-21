@@ -51,7 +51,7 @@ def search(search_index, query):
    
 
 def process_queries(search_index, queries):
-    for quaries in queries:
+    for query in queries:
         print(search(search_index, query))
     	
 
