@@ -30,10 +30,10 @@
 '''
 
 def search(search_index, query):
-    query = quary.lowercase()
-    quary_list = quary.split(" ") 
+    query = query.lowercase()
+    quary_list = query.split(" ") 
     doc_id = []
-    for i in query_list:
+    for i in quary_list:
     	if i in search_index:
     		collect = search_index[i]
     		for j in collect:
