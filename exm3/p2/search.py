@@ -38,8 +38,8 @@ def search(search_index, query):
     		collect = search_index[i]
     		for j in collect:
     			doc_id.append(j[0])
-    print("hiii",doc_id)
-    return(doc_id)
+    print("hiii",set(doc_id))
+    return(set(doc_id))
 
 '''
         function to search through the search index and return the results
