@@ -34,12 +34,18 @@ def load_stopwords(filename):
 
 
 def word_list(text):
+    var_1 = text.lower()
+    var_2 = var_1.split(" ")
+    var_3 = var_2.join([i for i in s if i.isalpha()])
+    print("va33",var_3)
+    return var_3
+
     '''
         Change case to lower and split the words using a SPACE
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
     '''
-    pass
+    
 
 def build_search_index(docs):
     '''
