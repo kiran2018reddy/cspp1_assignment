@@ -36,7 +36,7 @@ def load_stopwords(filename):
 def word_list(text):
     var_1 = text.lower()
     var_2 = var_1.split(" ")
-    var_3 = var_2.join([i for i in s if i.isalpha()])
+    var_3 = " ".join([i for i in var_2 if i.isalpha()])
     print("va33", var_3)
     return var_3
 
@@ -48,14 +48,14 @@ def word_list(text):
     
 
 def build_search_index(docs):
-    word_list(docs[0])
+    
     '''
         Process the docs step by step as given below
     '''
 
-    # initialize a search index (an empty dictionary)
+    dic = {}# initialize a search index (an empty dictionary)
 
-    # iterate through all the docs
+    for doc in dic:# iterate through all the docs
     # keep track of doc_id which is the list index corresponding the document
     # hint: use enumerate to obtain the list index in the for loop
 
@@ -91,8 +91,8 @@ def main():
         i += 1
 
     # call print to display the search index
-    # print_search_index(build_search_index(documents))
-    build_search_index(documents)
+    print_search_index(build_search_index(documents))
+    #build_search_index(documents)
 
 if __name__ == '__main__':
     main()
