@@ -30,7 +30,7 @@ def add_matrix(m1, m2):
         error message should be "Error: Matrix shapes invalid for addition"
     '''
     for i in m1:
-        if j in m2:
+        for j in m2:
             len(i)!=len(j)
             return "Error: Matrix shapes invalid for addition"
         else:
