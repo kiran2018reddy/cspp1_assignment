@@ -6,11 +6,12 @@ string.
 def main():
     lines = []
     while True:
-        s =input(" ")
-        if s:
-            lines.append(s)
+        given =input(" ")
+        if given:
+            lines.append(given)
         else:
             break
+    return "lines"
     
   
 
