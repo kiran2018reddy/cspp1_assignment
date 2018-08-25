@@ -9,6 +9,25 @@
 '''
 
 def check_sudoku(sudoku):
+    if len(sudoku) == 9:
+    numsinrow = 0
+    for i in range(0, 9):
+        if len(sudoku[i]) == 9:
+            numsinrow =numsinrow + 1
+    if numsinrow == 9:
+        for i in range(9):
+            rowoccurence = [0,0,0,0,0,0,0,0,0,0]
+            for j in range(9):
+                rowoccurence[sudoku[i][j]] += 1
+                temprow = rowoccurence[1:10]
+                if temprow == [1,1,1,1,1,1,1,1,1]:
+                    return True
+                else:
+                    return False
+    else:
+        return False
+else:
+    return False
     '''
         Your solution goes here. You may add other helper functions as needed.
         The function has to return True for a valid sudoku grid and false otherwise

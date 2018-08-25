@@ -7,7 +7,10 @@ def tokenize(string):
     pass
             
 def main():
-    pass
+    lines = int(input())
+    str = " "
+    for i in range(o, lines):
+    	str = str + input
 
 if __name__ == '__main__':
     main()
