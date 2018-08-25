@@ -10,7 +10,8 @@ def main():
             line = input()
         except error:
             break
-    lines.append(line)
+        lines.append(line)
+    return lines
 
 
 if __name__ == '__main__':
