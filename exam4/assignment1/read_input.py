@@ -6,8 +6,7 @@ string.
 def main():
     s = int(input())
     input_str = 0
-    while:
-    	s>input_str
+    while s>input_str
     	print(input())
     	input_str=input_str+1
 if __name__ == '__main__':
