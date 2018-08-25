@@ -4,7 +4,7 @@ string.
 '''
 
 def main():
-    lines=[]
+    lines=" "
     while True:
         try:
             line = input()
