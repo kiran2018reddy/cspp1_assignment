@@ -6,7 +6,7 @@ string.
 def main():
     s = int(input())
     input_str = 0
-    while True:
+    while:
     	s>input_str
     	print(input())
     	input_str=input_str+1
