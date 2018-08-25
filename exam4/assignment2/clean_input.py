@@ -4,7 +4,7 @@ alphabets in both upper and lower case and numbers.
 '''
 
 def clean_string(string):
-    " ".join([i for i in s if i.isalpha()])
+    " ".join([i for i in string if i.isalpha()])
 
 def main():
     string = input()
