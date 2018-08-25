@@ -10,11 +10,6 @@ def main():
         if given:
             lines.append(given)
         else:
-            break
-    return "lines"
-    
-  
-
-
+            break 
 if __name__ == '__main__':
     main()
