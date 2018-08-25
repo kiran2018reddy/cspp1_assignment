@@ -4,14 +4,15 @@ string.
 '''
 
 def main():
-    lines=" "
+    lines = []
     while True:
-        try:
-            line = input()
-        except error:
+        s =input(" ")
+        if s:
+            lines.append(s)
+        else:
             break
-        lines.append(line)
-    return lines
+    
+  
 
 
 if __name__ == '__main__':
