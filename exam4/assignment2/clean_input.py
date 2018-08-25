@@ -5,7 +5,7 @@ alphabets in both upper and lower case and numbers.
 
 def clean_string(string):
 	s = string
-    return ''.join([i for i in s if ord(i) in range(97, 123) \
+    return " ".join([i for i in s if ord(i) in range(97, 123) \
                     or ord(i) in range(65, 91) \
                     or ord(i) in range(48, 58)])
 def main():
