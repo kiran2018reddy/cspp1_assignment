@@ -6,6 +6,7 @@ alphabets in both upper and lower case and numbers.
 def clean_string(string):
     s = input(string)
     " ".join([i for i in s if i.isalpha()])
+    print(i)
 
 def main():
     string = input()
