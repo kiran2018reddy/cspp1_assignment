@@ -18,7 +18,7 @@ def check_sudoku(sudoku):
         for i in range(9):
             rowoccurence = [0,0,0,0,0,0,0,0,0,0]
             for j in range(9):
-                rowoccurence[sudoku[i][j]] += 1
+                rowoccurence[sudoku[i][j]] =rowoccurence[sudoku[i][j]] + 1
                 temprow = rowoccurence[1:10]
                 if temprow == [1,1,1,1,1,1,1,1,1]:
                     return True
