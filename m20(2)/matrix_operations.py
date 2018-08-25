@@ -29,19 +29,32 @@ def add_matrix(m1, m2):
         and return None
         error message should be "Error: Matrix shapes invalid for addition"
     '''
-    for i in m1:
-        for j in m2:
-            len(i)!=len(j)
-            return "Error: Matrix shapes invalid for addition"
-        else:
-            print(similar)
-        for i in range(len(m1)):#iterate through rows
-            for j in range(len(m2[0])):#iterate through coloums
-                result[i][j] = m1[i][j] + m2[i][j]
-    for r in result:
-        print(r)
-         
-        
+    # for i in m1:
+    #     for j in m2:
+    #         len(i)!=len(j)
+    #         return "Error: Matrix shapes invalid for addition"
+    #     else:
+    #         print(similar)
+    #     for i in range(len(m1)):#iterate through rows
+    #         for j in range(len(m2[0])):#iterate through coloums
+    #             result[i][j] = m1[i][j] + m2[i][j]
+    # for r in result:
+    #     print(r)
+    if len(m1)!= len(m2):
+        print("Error: Matrix shapes invalid for addition")
+        return None
+    for i in range(len(m1)):
+        if len(m1[i]) != len(m2[i]):
+            print("Error: Matrix shapes invalid for addition")
+            return None
+    result =[]
+    for i in range(len(m1)):
+        row = []
+        for j in range(len(m1[0])):
+            add = m1[i][j]+m2[i][j]
+            row.append(add)
+        result.append(row)
+    return result       
                 
                 
 
