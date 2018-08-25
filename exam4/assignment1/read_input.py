@@ -4,12 +4,11 @@ string.
 '''
 
 def main():
-    lines = []
+    s = int(input())
+    input_str = 0
     while True:
-        given =input(" ")
-        if given:
-            lines.append(given)
-        else:
-            break 
+    	s>input_str
+    	print(input())
+    	input_str=input_str+1
 if __name__ == '__main__':
     main()
