@@ -54,10 +54,7 @@ def add_matrix(m1_, m2_):
             add = m1_[i1_][j1_] + m2_[i1_][j1_]
             row.append(add)
         result.append(row)
-    return result       
-                
-                
-
+    return result
 def read_matrix():
     '''
         read the matrix dimensions from input
@@ -75,9 +72,6 @@ def read_matrix():
             return None
         matrix.append(lst)
     return matrix
-   
-    
-
 def main():
     # read matrix 1
     m1_ = read_matrix()
