@@ -85,8 +85,8 @@ def main():
     # read matrix 2
     m2 = read_matrix()
     if (m1 != None and m2 != None):
-        print(add_matrix(m1,m2))
-        print(mult_matrix(m1,m2))
+        print(add_matrix(m1, m2))
+        print(mult_matrix(m1, m2))
         
 
     # add matrix 1 and matrix 2
