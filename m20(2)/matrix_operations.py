@@ -70,7 +70,7 @@ def read_matrix():
     matrix = []
     for i in range(rows):
         lst = [int(i) for i in input().split(" ")]
-        if len(lst)!= columns:
+        if len(lst) != columns:
             print("Error: Invalid input for the matrix")
             return None
         matrix.append(lst)
@@ -80,11 +80,11 @@ def read_matrix():
 
 def main():
     # read matrix 1
-    m1=read_matrix()
+    m1 = read_matrix()
 
     # read matrix 2
-    m2=read_matrix()
-    if (m1!=None and m2!=None):
+    m2 = read_matrix()
+    if (m1 != None and m2 != None):
         print(add_matrix(m1,m2))
         print(mult_matrix(m1,m2))
         
