@@ -1,3 +1,4 @@
+"""matrix"""
 def mult_matrix(m1_, m2_):
     '''
         check if the matrix1 columns = matrix2 rows
@@ -20,7 +21,6 @@ def mult_matrix(m1_, m2_):
     else:
         print("Error: Matrix shapes invalid for mult")
         return None
-
 def add_matrix(m1_, m2_):
     '''
         check if the matrix shapes are similar
@@ -73,6 +73,7 @@ def read_matrix():
         matrix.append(lst)
     return matrix
 def main():
+    """main"""
     # read matrix 1
     m1_ = read_matrix()
 
