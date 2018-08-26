@@ -9,7 +9,7 @@ def get_facevalues(hand):
     return sorted(['--23456789TJQKA'.index(face) for face, suite in hand], reverse = True)
 def is_straight(hand):
     """straight"""
-    face_values = get_facevalues(hand)
+       face_values = get_facevalues(hand)
     if face_values == [14, 5, 4, 3, 2]:
         face_values = [5, 4, 3, 2, 1]
     set_facevalues = set(face_values)
