@@ -1,4 +1,4 @@
-'''Problem 1 - Build the Shift Dictionary and Apply Shift'''
+"""shift"""
 # The Message class contains methods that could be used to apply a
 # cipher to a string, either to encrypt or to decrypt a message
 # (since for Caesar codes this is the same action).
@@ -40,6 +40,7 @@
 # Remember that spaces and punctuation should not be changed by the cipher.
 
 # Helper code
+import string
 def load_words(file_name):
     '''
     file_name (string): the name of the file containing
@@ -65,7 +66,7 @@ WORDLIST_FILENAME = 'words.txt'
 
 
 ### Paste your implementation of the Message class here
-       class Message():
+class Message():
     '''
     message
     '''
@@ -86,8 +87,11 @@ WORDLIST_FILENAME = 'words.txt'
         valid words
         '''
         return self.valid_words[:]
-    def build_shift_dict(self, shift): 
-       lower_keys = list(string.ascii_lowercase)
+    def build_shift_dict(self, shift):
+        '''
+        letters of string
+        '''
+        lower_keys = list(string.ascii_lowercase)
         lower_values = list(string.ascii_lowercase)
         shift_lower_vals = lower_values[shift:] + lower_values[:shift]
         upper_keys = list(string.ascii_uppercase)
@@ -109,6 +113,13 @@ WORDLIST_FILENAME = 'words.txt'
             else:
                 new_msg.append(self.build_shift_dict(shift)[i])
         return ''.join(new_msg)
+
+
+
+
+    # def get_message_text(self):
+    #     return self.
+
 def main():
     '''
         Function to handle testcases
